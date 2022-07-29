@@ -784,9 +784,7 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
       if (_effectiveFocusNode!.hasFocus) {
         this._suggestionsBox!.open();
       } else {
-          if (widget.hideSuggestionsOnKeyboardHide){
-            this._suggestionsBox!.close();
-          }
+        this._suggestionsBox!.close();
       }
     };
 
